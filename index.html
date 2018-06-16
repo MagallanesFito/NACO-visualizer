@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing Function</title>
+        <script src="libraries/p5.js"></script>
+        <script src="sketch.js"></script>
+        <script src="cell.js"></script>
+        <script src="individual.js"></script>
+        <script src="particle.js"></script>
+        <style type="text/css">
+		html, body {
+		  height: 100%;
+		}
+		body {
+		  margin: 0;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+        </style>
+    </head>
+    <body>
+    		<div id="container">
+    			<div id="gaContainer">
+    				<h3 style="margin-right: 50px;">Genetic Algorithm</h3>
+    				<button onclick="initialize()">New Population</button><br /><br />
+    				<button onclick="nextStep()">Next step</button>
+    			</div>
+    			<div id="psoContainer">
+    				<h4>Particle Swarm Optimization</h4>
+    				<button onclick="initializePSO()">New Population</button><br /><br />
+    				<button onclick="nextStepPSO()">Next step</button>
+    			</div>
+    		</div>
+    </body>
+</html>
